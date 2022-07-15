@@ -17,7 +17,7 @@ class ItemList extends StatelessWidget {
           ItemCard(
             title: "Биг Мак",
             shopName: "МегаБургер",
-            ImagePng: "assets/images/burger_beer.png",
+            SvgSrc: "assets/icons/burger_beer.svg",
             press: (){
               Navigator.push(
                 context,
@@ -32,19 +32,19 @@ class ItemList extends StatelessWidget {
           ItemCard(
             title: "Чизбургер",
             shopName: "МегаБургер",
-            ImagePng: "assets/images/burger_beer.png",
+            SvgSrc: "assets/icons/chinese_noodles.svg",
             press: (){},
           ),
           ItemCard(
             title: "Гамбургер",
             shopName: "МегаБургер",
-            ImagePng: "assets/images/burger_beer.png",
+            SvgSrc: "assets/icons/burger_beer.svg",
             press: (){},
           ),
           ItemCard(
             title: "Биг Рус",
             shopName: "МегаБургер",
-            ImagePng: "assets/images/burger2.png",
+            SvgSrc: "assets/icons/burger_beer.svg",
             press: (){},
           ),
 

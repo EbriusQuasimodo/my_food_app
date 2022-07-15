@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import '../../constants.dart';
 
 class ItemCard extends StatelessWidget {
-  final String title, shopName, ImagePng;
+  final String title, shopName, SvgSrc;
   final VoidCallback press;
   const ItemCard({
     Key? key,
     required this.title,
     required this.shopName,
     required this.press,
-    required this.ImagePng,
+    required this.SvgSrc,
   }) : super(key: key);
 
   @override
@@ -44,12 +45,10 @@ class ItemCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: kPrimaryColor.withOpacity(0.13),
                     shape: BoxShape.circle,
-                    image: DecorationImage(
-                      image: AssetImage(ImagePng),
-                    ),
                   ),
-                  //child: SvgPicture.asset(
-                  // "assets/icons/burger_beer.svg",width: size.width * 0.18,),
+                  child: SvgPicture.asset(
+                  SvgSrc,width: size.width * 0.18,
+                  ),
                 ),
                 Text(title),
                 SizedBox(height: 10),
